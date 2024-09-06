@@ -1,41 +1,42 @@
 
-" Configuración básica
+" Basic configuration
 let mapleader = " "
 
-" Moverse 5 líneas arriba o abajo
+" Move 5 lines up or down
 noremap <C-j> 5j
 noremap <C-k> 5k
 
-" Easy motion con espacio + s
+" Easy motion with space + s
 nmap <leader>s <Plug>(easymotion-s2)
 
-" Correr archivo C++ con espacio + r
+" Compile and run C++ file with space + r
 nmap <leader>r :w<CR>:!g++ % -o %:r && ./%:r<CR>
 
-" Borrar buffer
+" Delete buffer
 nmap <leader>bd :bd<CR>
 
-" Borrar ventana
+" Close window
 nmap <leader>wd :q<CR>
 
-" Abrir explorador de archivos
+" Open file explorer
 nmap <leader>e :NERDTreeToggle<CR>
 
-" Guardar archivo
+" Save file
 nmap <leader>w :w<CR>
 
-" Crear nueva ventana (split horizontal)
+" Create a new window (horizontal split)
 nmap <leader>ws :split<CR>
 
-" Crear nueva ventana (split vertical)
+" Create a new window (vertical split)
 nmap <leader>wv :vsplit<CR>
 
-" Moverse entre ventanas con Ctrl + h/l
-noremap <C-h> <C-w>h
-noremap <C-l> <C-w>l
+" Move between buffers with Ctrl + h/l
+noremap <C-h> :bprev<CR>
+noremap <C-l> :bnext<CR>
 
-" Moverse entre buffers con Shift + h/l
-noremap <S-h> :bprev<CR>
-noremap <S-l> :bnext<CR>
+" Move between windows with Shift + h/l
+noremap <S-h> <C-w>h
+noremap <S-l> <C-w>l
 
+" Prevent 'd' from copying to the clipboard
 noremap d "_d
