@@ -8,4 +8,6 @@ Plug 'ryanoasis/vim-devicons'                 " Add icons to NERDTree
 " Themes
 Plug 'folke/tokyonight.nvim'
 
+Plug 'mhinz/vim-startify'
+
 call plug#end()
