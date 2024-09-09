@@ -2,4 +2,4 @@
 opacity = 0.85
 dimensions = { columns = 90, lines = 35 }
 [font]
-normal = { family = "0xProto Nerd Font Propo", style = "Regular"}
+normal = { family = "0xProto Nerd Font", style = "Regular"}
