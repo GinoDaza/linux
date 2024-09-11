@@ -10,4 +10,8 @@ Plug 'folke/tokyonight.nvim'
 
 Plug 'mhinz/vim-startify'
 
+Plug 'yggdroot/indentline'
+
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
 call plug#end()
