@@ -1,5 +1,10 @@
 [window]
-opacity = 0.85
-dimensions = { columns = 90, lines = 35 }
+opacity= 0.83
+dimensions = { columns = 90, lines = 40 }
+decorations = "None" 
+padding = {x = 5, y = 5}
 [font]
 normal = { family = "0xProto Nerd Font", style = "Regular"}
+[colors]
+[colors.primary]
+background = "#1a1b26"
