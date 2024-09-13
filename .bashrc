@@ -6,6 +6,10 @@ alias grep='grep --color=auto'
 
 alias rm='trash'
 
-alias la='ls -a'
-
 alias vim='nvim'
+
+alias ll='ls -alF'
+
+alias la='ls -A'
+
+alias l='ls -CF'
