@@ -1,0 +1,11 @@
+{
+    "telemetry.telemetryLevel": "off",
+    "files.autoSave": "afterDelay",
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.minimap.enabled": false,
+    "explorer.confirmDelete": false,
+    "editor.codeActionsOnSave": {
+    },
+    "extensions.ignoreRecommendations": true,
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+}
