@@ -1,4 +1,3 @@
-// Place your key bindings in this file to override the defaults
 [
     {
         "key": "a",
@@ -6,7 +5,8 @@
         "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
     },
     {
-        "key": "alt+d",
-        "command": "extension.aceJump"
+        "key": "space s",
+        "command": "extension.aceJump",
+        "when": "editorTextFocus && vim.mode =='Normal'"
     }
 ]
