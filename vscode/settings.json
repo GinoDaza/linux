@@ -4,8 +4,9 @@
     "workbench.iconTheme": "material-icon-theme",
     "editor.minimap.enabled": false,
     "explorer.confirmDelete": false,
-    "editor.codeActionsOnSave": {
-    },
+    "editor.codeActionsOnSave": {},
     "extensions.ignoreRecommendations": true,
     "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "vim.useCtrlKeys": false,
+    "vim.startInInsertMode": true, 
 }
