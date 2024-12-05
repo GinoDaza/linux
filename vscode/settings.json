@@ -7,6 +7,5 @@
     "editor.codeActionsOnSave": {},
     "extensions.ignoreRecommendations": true,
     "terminal.integrated.defaultProfile.windows": "Git Bash",
-    "vim.useCtrlKeys": false,
-    "vim.startInInsertMode": true, 
+    "vim.useCtrlKeys": false
 }
