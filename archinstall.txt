@@ -1,0 +1,24 @@
+loadkeys la-latin1
+
+setfont ter-122b
+
+Connect to internet:
+iwctl (en laptop):
+  station wlan0 connect (nombre del wifi)
+
+Create partition:
+fdisk -l
+fdisk /dev/...
+
+mkfs.ext4 /dev/root_partition
+
+mount /dev/sdX2 /mnt
+mkdir -p /mnt/boot/efi
+mount /dev/sdX1 /mnt/boot/efi
+
+reflector --country "Brazil,Chile" --protocol https --sort rate --latest 10 --save /etc/pacman.d/mirrorlist
+
+pacstrap -K /mnt base linux linux-firmware
+
+genfstab -U /mnt >> /mnt/etc/fstab
+
