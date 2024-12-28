@@ -1,0 +1,86 @@
+# this format really sucks, maybe i should use yml instead
+# indented for better readability
+
+[Gestures][Touchpad][0] # Volume management
+Type = Swipe
+Direction = UpDown
+Fingers = 4
+
+[Gestures][Touchpad][0][Actions][0]
+Type = Command
+When = Updated
+RepeatInterval = -25
+
+[Gestures][Touchpad][0][Actions][0][Command]
+Command = pactl set-sink-volume @DEFAULT_SINK@ +5%
+
+[Gestures][Touchpad][0][Actions][1]
+Type = Command
+When = Updated
+RepeatInterval = 25
+
+[Gestures][Touchpad][0][Actions][1][Command]
+Command = pactl set-sink-volume @DEFAULT_SINK@ -5%
+
+
+[Gestures][Touchpad][1] # Window switching
+Type = Swipe
+Direction = LeftRight
+Fingers = 3
+
+[Gestures][Touchpad][1][Actions][0]
+Type = KeySequence
+When = Started
+
+[Gestures][Touchpad][1][Actions][0][KeySequence]
+Sequence = press LEFTALT,press TAB,release TAB
+
+[Gestures][Touchpad][1][Actions][1]
+Type = KeySequence
+When = Updated
+RepeatInterval = -100
+
+[Gestures][Touchpad][1][Actions][1][KeySequence]
+Sequence = press LEFTSHIFT,press TAB,release TAB,release LEFTSHIFT
+
+[Gestures][Touchpad][1][Actions][2]
+Type = KeySequence
+When = Updated
+RepeatInterval = 100
+
+[Gestures][Touchpad][1][Actions][2][KeySequence]
+Sequence = press TAB,release TAB
+
+[Gestures][Touchpad][1][Actions][3]
+Type = KeySequence
+When = EndedOrCancelled
+
+[Gestures][Touchpad][1][Actions][3][KeySequence]
+Sequence = release LEFTALT
+
+
+[Gestures][Touchpad][4]
+Type = Swipe
+Direction = Up
+Fingers = 3
+
+[Gestures][Touchpad][4][Actions][0]
+Type = KeySequence
+When = Updated
+
+[Gestures][Touchpad][4][Actions][0][KeySequence]
+Sequence = press LEFTMETA,press TAB,release LEFTMETA,release TAB
+
+
+[Gestures][Touchpad][5]
+Type = Swipe
+Direction = Down
+Fingers = 3
+
+[Gestures][Touchpad][5][Actions][0]
+Type = KeySequence
+When = Updated
+
+[Gestures][Touchpad][5][Actions][0][KeySequence]
+Sequence = press LEFTMETA,press D,release LEFTMETA,release D
+
