@@ -4,9 +4,4 @@
         "command": "explorer.newFile",
         "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
     },
-    {
-        "key": "space s",
-        "command": "extension.aceJump",
-        "when": "editorTextFocus && vim.mode =='Normal'"
-    }
 ]
