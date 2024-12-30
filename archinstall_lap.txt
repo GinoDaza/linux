@@ -54,7 +54,7 @@ pacman -S vi
 visudo
 # Uncomment: %wheel ALL=(ALL) ALL
 
-# Install Drivers and Firmware
+# Install Drivers and Firmware (intel)
 pacman -S sof-firmware mesa xf86-video-intel
 
 # Install and Configure NetworkManager
