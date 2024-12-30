@@ -1,0 +1,6 @@
+sudo pacman -S plasma
+sudo pacman -S trash-cli alacritty spectacle dolphin ark firefox
+sudo pacman -S git base-devel nodejs npm
+
+yay -S brave-bin
+yay -S visual-studio-code-bin
