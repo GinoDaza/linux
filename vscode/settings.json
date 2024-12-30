@@ -6,6 +6,4 @@
     "explorer.confirmDelete": false,
     "editor.codeActionsOnSave": {},
     "extensions.ignoreRecommendations": true,
-    "terminal.integrated.defaultProfile.windows": "Git Bash",
-    "vim.useCtrlKeys": false
 }
