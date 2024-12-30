@@ -50,7 +50,7 @@ grub-mkconfig -o /boot/grub/grub.cfg
 # Create User and Configure Sudo
 useradd -m -G wheel -s /bin/bash tu_usuario
 passwd tu_usuario
-pacman -S vi
+pacman -S vi sudo
 visudo
 # Uncomment: %wheel ALL=(ALL) ALL
 
