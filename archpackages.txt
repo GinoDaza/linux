@@ -1,8 +1,7 @@
-sudo pacman -S plasma
-sudo pacman -S trash-cli neovim spectacle dolphin ark firefox kate gwenview
+sudo pacman -S trash-cli neovim firefox alacritty
 sudo pacman -S git base-devel nodejs npm
+sudo pacman -S spotify-launcher
 
 yay -S brave-bin
 yay -S visual-studio-code-bin
 
-sudo pacman -S spotify-launcher
