@@ -1,0 +1,2 @@
+sudo pacman -S plasma
+sudo pacman -S spectacle dolphin ark kate gwenview
