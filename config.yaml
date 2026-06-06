@@ -1,0 +1,73 @@
+# ~/.config/inputactions/config.yaml
+
+touchpad:
+  gestures:
+
+    # Bloquear TODOS los gestos nativos de KDE
+    - type: swipe
+      direction: any
+      conditions:
+        - $fingers >= 3
+
+    # Volumen
+    - type: swipe
+      fingers: 4
+      direction: up_down
+      actions:
+        - on: update
+          interval: -10
+          command: pactl set-sink-volume @DEFAULT_SINK@ +5%
+
+        - on: update
+          interval: 10
+          command: pactl set-sink-volume @DEFAULT_SINK@ -5%
+
+    # Escritorios virtuales (dirección natural)
+    - type: swipe
+      fingers: 4
+      direction: left
+      actions:
+        - plasma_shortcut: kwin,Switch One Desktop to the Right
+
+    - type: swipe
+      fingers: 4
+      direction: right
+      actions:
+        - plasma_shortcut: kwin,Switch One Desktop to the Left
+
+    # Alt+Tab interactivo
+    - type: swipe
+      fingers: 3
+      direction: left_right
+      actions:
+        - on: begin
+          input:
+            - keyboard: [ +leftalt, tab ]
+
+        - on: update
+          interval: -60
+          input:
+            - keyboard: [ leftshift+tab ]
+
+        - on: update
+          interval: 60
+          input:
+            - keyboard: [ tab ]
+
+        - on: end_cancel
+          input:
+            - keyboard: [ -leftalt ]
+
+    # Overview
+    - type: swipe
+      fingers: 3
+      direction: up
+      actions:
+        - plasma_shortcut: kwin,Overview
+
+    # Show Desktop
+    - type: swipe
+      fingers: 3
+      direction: down
+      actions:
+        - plasma_shortcut: kwin,Show Desktop
