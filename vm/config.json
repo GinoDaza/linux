@@ -1,0 +1,75 @@
+{
+    "archinstall-language": "English",
+    "audio_config": {
+        "audio": "pipewire"
+    },
+    "bootloader": "Grub",
+    "disk_config": {
+        "config_type": "default_layout",
+        "device_modifications": [
+            {
+                "device": "/dev/sda",
+                "wipe": true,
+                "partitions": [
+                    {
+                        "obj_id": "6f1c2b0e-5c4a-4d7e-9a53-1f2e8b7c0a11",
+                        "status": "create",
+                        "type": "primary",
+                        "start": {
+                            "unit": "MiB",
+                            "value": 1
+                        },
+                        "size": {
+                            "unit": "Percent",
+                            "value": 100,
+                            "total_size": null
+                        },
+                        "fs_type": "ext4",
+                        "mountpoint": "/",
+                        "mount_options": [],
+                        "flags": [
+                            "boot"
+                        ],
+                        "dev_path": null
+                    }
+                ]
+            }
+        ]
+    },
+    "hostname": "archvm",
+    "kernels": [
+        "linux"
+    ],
+    "locale_config": {
+        "kb_layout": "us",
+        "sys_enc": "UTF-8",
+        "sys_lang": "en_US"
+    },
+    "network_config": {
+        "type": "nm"
+    },
+    "ntp": true,
+    "packages": [
+        "plasma",
+        "sddm",
+        "alacritty",
+        "spectacle",
+        "dolphin",
+        "ark",
+        "kate",
+        "gwenview",
+        "virtualbox-guest-utils"
+    ],
+    "profile_config": {
+        "gfx_driver": "All open-source",
+        "profile": {
+            "main": "Minimal"
+        }
+    },
+    "services": [
+        "sddm",
+        "vboxservice"
+    ],
+    "swap": true,
+    "timezone": "UTC"
+}
